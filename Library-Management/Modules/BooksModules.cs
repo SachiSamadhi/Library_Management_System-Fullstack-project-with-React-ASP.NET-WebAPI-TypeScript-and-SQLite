@@ -27,7 +27,7 @@ namespace Library_Management.Modules
             }).WithTags("Books");
             app.MapPost("/api/Books", async (IMediator mediator, Library.Contracts.Requests.Books.CreateBooksRequest createBooksRequest, CancellationToken ct) =>
             {
-                var command = new CreateBooksCommand(createBooksRequest.Title, createBooksRequest.Author, createBooksRequest.Category, createBooksRequest.Description);
+                var command = new CreateBooksCommand(createBooksRequest.Title, createBooksRequest.Author, createBooksRequest.Category);
                 var result = await mediator.Send(command, ct);
                 return Results.Ok(result);
 
@@ -35,7 +35,7 @@ namespace Library_Management.Modules
 
             app.MapPut("/api/Books/{Id}", async(IMediator mediator, int Id, UpdateBooksRequest updateBooksRequest, CancellationToken ct) =>
             {
-                var command = new UpdateBooksCommand(Id,updateBooksRequest.Title, updateBooksRequest.Author, updateBooksRequest.Category, updateBooksRequest.Description);
+                var command = new UpdateBooksCommand(Id,updateBooksRequest.Title, updateBooksRequest.Author, updateBooksRequest.Category);
                 var result = await mediator.Send(command, ct);
                 return Results.Ok(result);
             }

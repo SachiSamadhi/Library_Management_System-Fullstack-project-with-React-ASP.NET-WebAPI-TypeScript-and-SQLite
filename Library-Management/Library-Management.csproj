@@ -19,12 +19,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Client\" />
+    <Folder Include="Client\React-TypeScript-Frontend\public\" />
+    <Folder Include="Client\React-TypeScript-Frontend\src\assets\" />
     <Folder Include="Controllers\" />
-    <Folder Include="FrontendPage\Library_Management_System_Page\public\" />
-    <Folder Include="FrontendPage\Library_Management_System_Page\src\assets\" />
-    <Folder Include="FrontendPage\Library_Management_System_Page\src\Interceptors\" />
-    <Folder Include="FrontendPage\Library_Management_System_Page\src\api\" />
-    <Folder Include="FrontendPage\Library_Management_System_Page\src\Router\" />
   </ItemGroup>
 
   <ItemGroup>

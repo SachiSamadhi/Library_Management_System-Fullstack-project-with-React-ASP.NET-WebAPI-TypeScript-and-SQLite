@@ -1,8 +1,8 @@
-export interface BookDto {
+export interface bookDto {
     id: number | undefined,
     title: string,
     author: string,
-    description: string,
-    createDate: string | undefined,
     category: string
+    createDate: string | undefined,
+    
 }

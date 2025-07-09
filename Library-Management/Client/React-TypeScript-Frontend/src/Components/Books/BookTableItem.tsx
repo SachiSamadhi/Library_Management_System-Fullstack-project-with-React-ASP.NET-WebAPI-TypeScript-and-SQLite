@@ -1,25 +1,22 @@
-import { Button } from "semantic-ui-react";
-import type { BookDto } from "../../Models/booksDto"
-import apiConnector from "../../api/apiConnector";
+import type {bookDto} from "../../models/bookDto.ts";
+import {Button} from "semantic-ui-react";
+import apiConnector from "../../api/apiConnector.ts";
+import {NavLink} from "react-router-dom";
 
 interface Props {
-    book: BookDto;
+    book: bookDto;
 }
-
-
-
-export default function LibraryBooksItem({ book }: Props) {
+export default function BookTableItem({ book }: Props) {
     return (
         <>
             <tr className="center aligned">
                 <td data-label="Id">{book.id}</td>
                 <td data-label="Title">{book.title}</td>
                 <td data-label="Author">{book.author}</td>
-                <td data-label="Description">{book.description}</td>
-                <td data-label="CreateDate">{book.createDate}</td>
                 <td data-label="Category">{book.category}</td>
+                <td data-label="CreateDate">{book.createDate}</td>
                 <td data-label="Action">
-                    <Button  color="yellow" type="submit">
+                    <Button as={NavLink} to={`editBook/${book.id}`} color="yellow" type="submit">
                         Edit
                     </Button>
                     <Button type="button" negative onClick={async () => {
@@ -30,8 +27,6 @@ export default function LibraryBooksItem({ book }: Props) {
                     </Button>
                 </td>
             </tr>
-
-
         </>
     )
 }

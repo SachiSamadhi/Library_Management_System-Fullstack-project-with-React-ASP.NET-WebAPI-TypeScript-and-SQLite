@@ -27,7 +27,7 @@ public class UpdateBooksBooksCommandHandler : IRequestHandler<UpdateBooksCommand
         bookToUpdate.Title = request.Title;
         bookToUpdate.Author = request.Author;
         bookToUpdate.Category = request.Category;
-        bookToUpdate.Description = request.Description;
+        
 
         _libraryDBContext.Books.Update(bookToUpdate);
         await _libraryDBContext.SaveChangesAsync(cancellationToken);
