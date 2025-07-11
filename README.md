@@ -1,9 +1,9 @@
 ##📚 Library Management System – Fullstack Web App##
 A simple fullstack web application for managing library books. Built using React + TypeScript for the frontend and ASP.NET Core Web API + SQLite for the backend.
 
-Special Note :   Frontend File : 
+🟢Special Note :   Frontend File : 
 
-Library-Management => client => React_TypeScript_Interface
+🟢Library-Management => client => React_TypeScript_Interface
 
 🖼️ Screenshots
 
