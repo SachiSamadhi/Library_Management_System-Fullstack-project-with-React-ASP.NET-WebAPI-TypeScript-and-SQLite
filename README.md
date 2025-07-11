@@ -29,9 +29,14 @@ A simple fullstack web application for managing library books. Built using React
 By default, the API runs on: https://localhost:5038
 
 🔵 Frontend Setup (React + TypeScript)
-#cd frontend
-#npm install
-#npm run dev
+npm install
+#npm run start
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
 The app runs at: http://localhost:3000
 
