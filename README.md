@@ -1,13 +1,17 @@
 [Library Management System – Project Report.pdf](https://github.com/user-attachments/files/21185405/Library.Management.System.Project.Report.pdf)[Library Management System – Project Report.pdf](https://github.com/user-attachments/files/21185402/Library.Management.System.Project.Report.pdf)[Library Management System – Project Report.pdf](https://github.com/user-attachments/files/21185396/Library.Management.System.Project.Report.pdf)##📚 Library Management System – Fullstack Web App##
 A simple fullstack web application for managing library books. Built using React + TypeScript for the frontend and ASP.NET Core Web API + SQLite for the backend.
 
-🟢Special Note :   Frontend File : 
+🟢**Special Note : **  Frontend File : 
 
-🟢Library-Management => client => React_TypeScript_Interface
+👉Library-Management => client => React_TypeScript_Interface
 
-Project Report file :
+## 📄 Project Report
 
-[Uploading Library Management System – Project Report.pdf…]()
+You can view or download the complete project report here:
+
+👉 [📕 View PDF Report](./Library Management System – Project Report.pdf)
+
+
 
 
 🖼️ Screenshots
