@@ -1,11 +1,11 @@
-<img width="954" height="537" alt="home" src="https://github.com/user-attachments/assets/2f29f313-bcd8-4cf8-af45-0313be7d4fc8" />📚 Library Management System – Fullstack Web App
+📚 Library Management System – Fullstack Web App
 A simple fullstack web application for managing library books. Built using React + TypeScript for the frontend and ASP.NET Core Web API + SQLite for the backend.
 
 🖼️ Screenshots
 
-<img width="954" height="537" alt="home" src="https://github.com/user-attachments/assets/c9b3b2fc-c3d9-4053-a9e3-536c66fd9069" />
+<img width="954" height="537" alt="home" src="https://github.com/user-attachments/assets/c7632718-e650-4da2-bc37-7e75872589b4" />
 
-<img width="953" height="503" alt="BookTable" src="https://github.com/user-attachments/assets/4f337b9c-624f-495e-a63c-a880b5d1c974" />
+<img width="952" height="530" alt="home2" src="https://github.com/user-attachments/assets/c083ed9b-bb6c-4302-ac57-a9124af6eb68" />
 
 
 🧰 Tech Stack
