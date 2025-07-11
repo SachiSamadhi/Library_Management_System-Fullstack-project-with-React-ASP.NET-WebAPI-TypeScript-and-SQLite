@@ -22,6 +22,7 @@ public class CreateBooksCommandHandler : IRequestHandler<CreateBooksCommand, int
             Title = request.Title,
             Author = request.Author,
             Category = request.Category,
+           
             CreateDate = DateTime.Now.ToUniversalTime()
         };
         await _libraryDBContext.Books.AddAsync(books, cancellationToken);

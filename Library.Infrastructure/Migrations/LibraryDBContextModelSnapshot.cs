@@ -37,9 +37,7 @@ namespace Library.Infrastructure.Migrations
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("TEXT");
-                    b.Property<string>("Description")
-                       .IsRequired()
-                       .HasColumnType("TEXT");
+                   
 
                     b.HasKey("Id");
 
