@@ -11,6 +11,8 @@ export default function BookForm() {
     const navigate = useNavigate();
 
     const [book, setBook] = useState<bookDto | null>(null);
+    
+    
 
     useEffect(() => {
         if (id) {
@@ -83,8 +85,8 @@ export default function BookForm() {
                 </Typography>
 
 
-                <Button as={NavLink} to="booktable/" floated="right" positive type="submit" content="Submit" />
-                <Button as={NavLink} to="/" floated="right" type="button" content="Cancel" />
+                <Button floated="right" positive type="submit" content="Submit" />
+                <Button as={NavLink} to="booktable/" floated="right" type="button" content="Cancel" />
             </form>
         </Typography>
             </Box>
