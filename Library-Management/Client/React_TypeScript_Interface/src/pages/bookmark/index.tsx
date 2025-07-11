@@ -10,6 +10,12 @@ import {
 import SearchIcon from "../../assets/icons/icon-search.svg";
 import { BookDataType } from "../../assets/data";
 import { BookContext } from "../../context/book-context";
+import BookTable from "../../components/Books/BookTable";
+import MovieList from "../../components/movie-list";
+
+
+
+
 
 const Bookmark = () => {
   const [search, setSearch] = useState("");
@@ -60,8 +66,19 @@ const Bookmark = () => {
           />
         </Paper>
       </Box>
-
+        <Box width="100%">
+            <Typography variant="h5" component="h1" my={6} fontWeight={400}>
+               Create New Books Inputs
+            </Typography>
+            < BookTable />
+        </Box>
     </Layout>
+      
+          
+      
+        
+
+  
   );
 };
 

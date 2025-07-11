@@ -32,14 +32,14 @@ builder.Services.AddDbContext<LibraryDBContext>(opt =>
 
 
 
-// Add CORS policy
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("CorsPolicy", policyBuilder =>
+    options.AddPolicy("AllowAll", policy =>
     {
-        policyBuilder.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:5173");
+        policy.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader();
     });
-                
 });
 
 builder.Logging.ClearProviders();
@@ -58,7 +58,8 @@ if (app.Environment.IsDevelopment())
 
 
 
-app.UseCors("CorsPolicy");
+
+app.UseCors("AllowAll");
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseSwagger();
